@@ -59,6 +59,17 @@
         ],
         "post-update-cmd": [
             "@auto-scripts"
+        ],
+        "test": [
+            "vendor/bin/phpunit"
+        ],
+        "check": [
+            "vendor/bin/phpunit",
+            "vendor/bin/ecs",
+            "vendor/bin/phpstan"
+        ],
+        "lint-fix": [
+            "vendor/bin/ecs --fix"
         ]
     },
     "conflict": {
